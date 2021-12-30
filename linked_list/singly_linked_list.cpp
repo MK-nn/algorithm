@@ -32,6 +32,34 @@ void insert(LIST **head, int data, int p)
     }
 }
 
+void deleteLinkedList(LIST **head, int p)
+{
+    if (*head == NULL)
+    {
+        cout << "list empty" << endl;
+    }
+    LIST *x_prev;
+    LIST *x;
+    if (p == 1)
+    {
+        x = *head;
+        *head = (*head)->next;
+        delete (x);
+    }
+    else
+    {
+        LIST *x_prev = *head;
+        x = x_prev->next;
+        for (int i = 1; (x->next != NULL) && (i < p - 1); i++)
+        {
+            x_prev = x_prev->next;
+            x = x_prev->next;
+        }
+        x_prev->next = x->next;
+        delete (x);
+    }
+}
+
 int main()
 {
     return 0;
