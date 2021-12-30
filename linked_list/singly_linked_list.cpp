@@ -8,7 +8,7 @@ typedef struct list
     struct list *next;
 } LIST;
 
-void insert(LIST **head, int data, int p)
+void insertLinkedList(LIST **head, int data, int p)
 {
     LIST *x = (LIST *)malloc(sizeof(LIST));
     x->data = data;
