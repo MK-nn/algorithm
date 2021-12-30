@@ -60,6 +60,17 @@ void deleteLinkedList(LIST **head, int p)
     }
 }
 
+void printLinkedList(LIST *head)
+{
+    LIST *current = head;
+    while (current != NULL)
+    {
+        cout << current->data << "->";
+        current = current->next;
+    }
+    cout << "NULL" << endl;
+}
+
 int main()
 {
     return 0;
