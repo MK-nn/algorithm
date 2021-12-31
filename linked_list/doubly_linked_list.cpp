@@ -9,6 +9,7 @@ typedef struct list
 } LIST;
 
 void insertLinkedList(LIST **head, int key, int p)
+
 {
   LIST *x = (LIST *)malloc(sizeof(LIST));
   x->key = key;
@@ -44,6 +45,47 @@ void insertLinkedList(LIST **head, int key, int p)
       x_next->prev = x;
       x->prev = x_prev;
       x->next = x_next;
+    }
+  }
+}
+
+void deleteLinkedList(LIST **head, int p)
+{
+  if (*head == NULL)
+  {
+    return;
+  }
+
+  LIST *x;
+  LIST *x_next;
+  LIST *x_prev;
+  if (p == 1)
+  {
+    x = *head;
+    *head = (*head)->next;
+    (*head)->prev = NULL;
+    delete x;
+  }
+  else
+  {
+    x = *head;
+    for (int i = 1; i < p && x->next != NULL; i++)
+    {
+      x = x->next;
+    }
+
+    x_next = x->next;
+    x_prev = x->prev;
+    if (x_next == NULL)
+    {
+      x_prev->next = NULL;
+      delete x;
+    }
+    else
+    {
+      x_prev->next = x_next;
+      x_next->prev = x_prev;
+      delete x;
     }
   }
 }
