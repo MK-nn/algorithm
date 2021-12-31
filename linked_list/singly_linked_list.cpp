@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 #include <stdlib.h>
-using namespace std;
 
 typedef struct list
 {
@@ -36,7 +35,7 @@ void deleteLinkedList(LIST **head, int p)
 {
     if (*head == NULL)
     {
-        cout << "list empty" << endl;
+        std::cout << "list empty" << std::endl;
     }
     LIST *x_prev;
     LIST *x;
@@ -65,49 +64,49 @@ void printLinkedList(LIST *head)
     LIST *current = head;
     while (current != NULL)
     {
-        cout << current->data << "->";
+        std::cout << current->data << "->";
         current = current->next;
     }
-    cout << "NULL" << endl;
+    std::cout << "NULL" << std::endl;
 }
 
 int main()
 {
     LIST *head = NULL;
-    cout << "insert 5" << endl;
+    std::cout << "insert 5" << std::endl;
     insertLinkedList(&head, 5, 1);
     printLinkedList(head);
-    cout << "insert 7" << endl;
+    std::cout << "insert 7" << std::endl;
     insertLinkedList(&head, 7, 1);
     printLinkedList(head);
-    cout << "insert 3" << endl;
+    std::cout << "insert 3" << std::endl;
     insertLinkedList(&head, 3, 1);
     printLinkedList(head);
-    cout << "insert 4" << endl;
+    std::cout << "insert 4" << std::endl;
     insertLinkedList(&head, 4, 1);
     printLinkedList(head);
-    cout << "insert 9" << endl;
+    std::cout << "insert 9" << std::endl;
     insertLinkedList(&head, 9, 1);
     printLinkedList(head);
-    cout << "insert 1" << endl;
+    std::cout << "insert 1" << std::endl;
     insertLinkedList(&head, 1, 1);
-    cout << "result after inserted" << endl;
+    std::cout << "result after inserted" << std::endl;
     printLinkedList(head);
-    cout << endl;
+    std::cout << std::endl;
 
-    cout << "delete 1st" << endl;
+    std::cout << "delete 1st" << std::endl;
     deleteLinkedList(&head, 1);
     printLinkedList(head);
-    cout << "delete 3rd" << endl;
+    std::cout << "delete 3rd" << std::endl;
     deleteLinkedList(&head, 3);
     printLinkedList(head);
-    cout << "delete 1st" << endl;
+    std::cout << "delete 1st" << std::endl;
     deleteLinkedList(&head, 3);
     printLinkedList(head);
-    cout << "delete 5th" << endl;
+    std::cout << "delete 5th" << std::endl;
     deleteLinkedList(&head, 3);
     printLinkedList(head);
-    cout << "delete 1st" << endl;
+    std::cout << "delete 1st" << std::endl;
     deleteLinkedList(&head, 3);
     printLinkedList(head);
 
