@@ -103,4 +103,28 @@ void printLinkedList(LIST *head)
 
 int main()
 {
+  LIST *head = NULL;
+  cout << "insert 5" << endl;
+  insertLinkedList(&head, 5, 1);
+  printLinkedList(head);
+  cout << "insert 6" << endl;
+  insertLinkedList(&head, 6, 1);
+  printLinkedList(head);
+  cout << "insert 2" << endl;
+  insertLinkedList(&head, 2, 1);
+  printLinkedList(head);
+  cout << "insert 8" << endl;
+  insertLinkedList(&head, 8, 1);
+  printLinkedList(head);
+  cout << "insert 1" << endl;
+  insertLinkedList(&head, 1, 1);
+  cout << "result after inserted" << endl;
+  printLinkedList(head);
+
+  cout << "delete 1st" << endl;
+  deleteLinkedList(&head, 1);
+  printLinkedList(head);
+  cout << "delete 2nd" << endl;
+  deleteLinkedList(&head, 2);
+  printLinkedList(head);
 }
