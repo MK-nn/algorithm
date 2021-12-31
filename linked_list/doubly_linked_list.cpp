@@ -95,36 +95,36 @@ void printLinkedList(LIST *head)
   LIST *current = head;
   while (current != NULL)
   {
-    cout << current->key << " -> ";
+    std::cout << current->key << " -> ";
     current = current->next;
   }
-  cout << "NULL" << endl;
+  std::cout << "NULL" << std::endl;
 }
 
 int main()
 {
   LIST *head = NULL;
-  cout << "insert 5" << endl;
+  std::cout << "insert 5" << std::endl;
   insertLinkedList(&head, 5, 1);
   printLinkedList(head);
-  cout << "insert 6" << endl;
+  std::cout << "insert 6" << std::endl;
   insertLinkedList(&head, 6, 1);
   printLinkedList(head);
-  cout << "insert 2" << endl;
+  std::cout << "insert 2" << std::endl;
   insertLinkedList(&head, 2, 1);
   printLinkedList(head);
-  cout << "insert 8" << endl;
+  std::cout << "insert 8" << std::endl;
   insertLinkedList(&head, 8, 1);
   printLinkedList(head);
-  cout << "insert 1" << endl;
+  std::cout << "insert 1" << std::endl;
   insertLinkedList(&head, 1, 1);
-  cout << "result after inserted" << endl;
+  std::cout << "result after inserted" << std::endl;
   printLinkedList(head);
 
-  cout << "delete 1st" << endl;
+  std::cout << "delete 1st" << std::endl;
   deleteLinkedList(&head, 1);
   printLinkedList(head);
-  cout << "delete 2nd" << endl;
+  std::cout << "delete 2nd" << std::endl;
   deleteLinkedList(&head, 2);
   printLinkedList(head);
 }
