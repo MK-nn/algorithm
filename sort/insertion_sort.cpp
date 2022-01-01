@@ -6,9 +6,9 @@ void trace(int array[], int n)
   {
     if (i > 0)
     {
-      std::cout << " " << std::endl;
+      std::cout << " ";
     }
-    std::cout << array[i] << std::endl;
+    std::cout << array[i];
   }
   std::cout << std::endl;
 }
@@ -26,6 +26,7 @@ void insertionSort(int array[], int n)
       j--;
     }
     array[j + 1] = v;
+    std::cout << i << "回目: ";
     trace(array, n);
   }
 }
@@ -41,8 +42,11 @@ int main()
     std::cin >> array[i];
   }
 
+  std::cout << "Before sort: ";
   trace(array, n);
   insertionSort(array, n);
+  std::cout << "After sort: ";
+  trace(array, n);
 
   return 0;
 }
