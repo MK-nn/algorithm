@@ -32,4 +32,17 @@ void insertionSort(int array[], int n)
 
 int main()
 {
+  int array[100];
+  int n;
+
+  std::cin >> n;
+  for (int i = 0; i < n; i++)
+  {
+    std::cin >> array[i];
+  }
+
+  trace(array, n);
+  insertionSort(array, n);
+
+  return 0;
 }
