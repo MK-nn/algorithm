@@ -1,8 +1,9 @@
 #include <iostream>
 
-void bubbleSort(int array[], int n)
+int bubbleSort(int array[], int n)
 {
   bool flag = true;
+  int sw = 0;
   for (int i = 0; flag; i++)
   {
     flag = false;
@@ -12,9 +13,11 @@ void bubbleSort(int array[], int n)
       {
         std::swap(array[j], array[j - 1]);
         flag = true;
+        sw++;
       }
     }
   }
+  return sw;
 }
 
 int main()
