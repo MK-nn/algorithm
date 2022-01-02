@@ -16,3 +16,32 @@ void bubbleSort(int array[], int n)
     }
   }
 }
+
+int main()
+{
+  int n;
+  int array[n];
+  std::cin >> n;
+  for (int i = 0; i < n; i++)
+  {
+    std::cin >> array[i];
+  }
+
+  std::cout << "Before sort: ";
+  for (int i = 0; i < n; i++)
+  {
+    std::cout << array[i] << " ";
+  }
+  std::cout << std::endl;
+
+  bubbleSort(array, n);
+
+  std::cout << "After sort: ";
+  for (int i = 0; i < n; i++)
+  {
+    std::cout << array[i] << " ";
+  }
+  std::cout << std::endl;
+
+  return 0;
+}
