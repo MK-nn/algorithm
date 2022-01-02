@@ -37,7 +37,7 @@ int main()
   }
   std::cout << std::endl;
 
-  bubbleSort(array, n);
+  int sw = bubbleSort(array, n);
 
   std::cout << "After sort: ";
   for (int i = 0; i < n; i++)
@@ -45,6 +45,9 @@ int main()
     std::cout << array[i] << " ";
   }
   std::cout << std::endl;
+
+  std::cout << "replace count -> ";
+  std::cout << sw << std::endl;
 
   return 0;
 }
