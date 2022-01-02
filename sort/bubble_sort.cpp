@@ -20,8 +20,8 @@ void bubbleSort(int array[], int n)
 int main()
 {
   int n;
-  int array[n];
   std::cin >> n;
+  int array[n];
   for (int i = 0; i < n; i++)
   {
     std::cin >> array[i];
