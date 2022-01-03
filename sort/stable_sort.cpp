@@ -44,3 +44,15 @@ void printCard(CARD array[], int n)
   }
   std::cout << std::endl;
 }
+
+bool isStable(CARD array_1[], CARD array_2[], int n)
+{
+  for (int i = 0; i < n; i++)
+  {
+    if (array_1[i].suit != array_2[i].suit)
+    {
+      return false;
+    }
+  }
+  return true;
+}
