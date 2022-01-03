@@ -35,3 +35,12 @@ void selectionSort(CARD array[], int n)
     }
   }
 }
+
+void printCard(CARD array[], int n)
+{
+  for (int i = 0; i < n; i++)
+  {
+    std::cout << array[i].suit << "-" << array[i].value << " ";
+  }
+  std::cout << std::endl;
+}
