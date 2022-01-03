@@ -31,7 +31,7 @@ void selectionSort(CARD array[], int n)
       {
         min_j = j;
       }
-      std::swap(array[j], array[min_j]);
+      std::swap(array[i], array[min_j]);
     }
   }
 }
