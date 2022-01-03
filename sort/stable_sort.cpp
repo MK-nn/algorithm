@@ -57,6 +57,8 @@ bool isStable(CARD array_1[], CARD array_2[], int n)
   return true;
 }
 
+// bubble sort が安定な sort であることを用いて
+// 実行された selection sort が 安定 かどうか判定する
 int main()
 {
   int n;
