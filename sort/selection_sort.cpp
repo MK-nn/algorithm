@@ -23,6 +23,11 @@ int main()
   std::cin >> n;
   int array[n];
 
+  for (int i = 0; i < n; i++)
+  {
+    std::cin >> array[i];
+  }
+
   std::cout << "Before sort: ";
   for (int i = 0; i < n; i++)
   {
