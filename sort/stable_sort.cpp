@@ -19,3 +19,19 @@ void bubbleSort(CARD array[], int n)
     }
   }
 }
+
+void selectionSort(CARD array[], int n)
+{
+  for (int i = 0; i < n; i++)
+  {
+    int min_j = i;
+    for (int j = i; j < n; j++)
+    {
+      if (array[j].value < array[min_j].value)
+      {
+        min_j = j;
+      }
+      std::swap(array[j], array[min_j]);
+    }
+  }
+}
