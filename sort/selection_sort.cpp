@@ -2,17 +2,17 @@
 
 void selectionSort(int array[], int n)
 {
-  int minj;
+  int min_j;
   for (int i = 0; i < n - 1; i++)
   {
-    minj = i;
+    min_j = i;
     for (int j = i; j < n; j++)
     {
       if (array[j] < array[i])
       {
-        minj = j;
+        min_j = j;
       }
-      std::swap(array[i], array[minj]);
+      std::swap(array[i], array[min_j]);
     }
   }
 }
