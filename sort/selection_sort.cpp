@@ -16,3 +16,26 @@ void selectionSort(int array[], int n)
     }
   }
 }
+
+int main()
+{
+  int n;
+  std::cin >> n;
+  int array[n];
+
+  std::cout << "Before sort: ";
+  for (int i = 0; i < n; i++)
+  {
+    std::cout << array[i] << " ";
+  }
+  std::cout << std::endl;
+
+  selectionSort(array, n);
+
+  std::cout << "After sort: ";
+  for (int i = 0; i < n; i++)
+  {
+    std::cout << array[i] << " ";
+  }
+  std::cout << std::endl;
+}
