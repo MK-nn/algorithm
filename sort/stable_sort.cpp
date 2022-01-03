@@ -76,6 +76,8 @@ int main()
     array_2[i] = array_1[i];
   }
 
+  std::cout << "output example - > suit - value" << std::endl;
+
   std::cout << "Before sort: ";
   printCard(array_1, n);
 
