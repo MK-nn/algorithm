@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <stdlib.h>
 
 typedef struct list
 {
