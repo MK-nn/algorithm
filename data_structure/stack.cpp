@@ -47,6 +47,7 @@ int main()
     }
     else if (s == "end")
     {
+      std::cout << pop(array) << std::endl;
       break;
     }
     else
