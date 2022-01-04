@@ -23,8 +23,12 @@ int bubbleSort(int array[], int n)
 int main()
 {
   int n;
+
+  std::cout << "配列のサイズを入力してください: ";
   std::cin >> n;
   int array[n];
+
+  std::cout << "配列の各要素を入力してください: ";
   for (int i = 0; i < n; i++)
   {
     std::cin >> array[i];
