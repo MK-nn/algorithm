@@ -10,6 +10,12 @@ void push(int array[], int x)
   array[top] = x;
 }
 
+int pop(int array[])
+{
+  top--;
+  return array[top + 1];
+}
+
 int main()
 {
   return 0;
