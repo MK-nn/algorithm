@@ -31,11 +31,11 @@ int main()
   V[2] = 0.4;
   printVector(V);
 
-  std::cout << "insert 0.8 to 2(0,1,2,3,........)" << std::endl;
+  std::cout << "insert 0.8 to 2 (0,1,2,3,........)" << std::endl;
   V.insert(V.begin() + 2, 0.8);
   printVector(V);
 
-  std::cout << "erase num of 1(0,1,2,3,.......)" << std::endl;
+  std::cout << "erase num of 1 (0,1,2,3,.......)" << std::endl;
   V.erase(V.begin() + 1);
   printVector(V);
 
