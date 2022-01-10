@@ -103,26 +103,33 @@ void printLinkedList(LIST *head)
 int main()
 {
   LIST *head = NULL;
+
   std::cout << "insert 5" << std::endl;
   insertLinkedList(&head, 5, 1);
   printLinkedList(head);
+
   std::cout << "insert 6" << std::endl;
   insertLinkedList(&head, 6, 1);
   printLinkedList(head);
+
   std::cout << "insert 2" << std::endl;
   insertLinkedList(&head, 2, 1);
   printLinkedList(head);
+
   std::cout << "insert 8" << std::endl;
   insertLinkedList(&head, 8, 1);
   printLinkedList(head);
+
   std::cout << "insert 1" << std::endl;
   insertLinkedList(&head, 1, 1);
+
   std::cout << "result after inserted" << std::endl;
   printLinkedList(head);
 
   std::cout << "delete 1st" << std::endl;
   deleteLinkedList(&head, 1);
   printLinkedList(head);
+
   std::cout << "delete 2nd" << std::endl;
   deleteLinkedList(&head, 2);
   printLinkedList(head);
