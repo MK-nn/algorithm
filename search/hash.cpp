@@ -15,6 +15,20 @@ void insertLinkedList(LIST **head, int data)
   *head = x;
 }
 
+bool searchLinkedList(LIST *head, int x)
+{
+  LIST *current = head;
+  while (current != NULL)
+  {
+    if (current->data == x)
+    {
+      return true;
+    }
+    current = current->next;
+  }
+  return false;
+}
+
 int main()
 {
   return 0;
