@@ -29,6 +29,35 @@ bool searchLinkedList(LIST *head, int x)
   return false;
 }
 
+void deleteLinkedList(LIST **head, int key)
+
+{
+  if (*head == NULL)
+  {
+    return;
+  }
+  LIST *x_prev;
+  LIST *x;
+  if ((*head)->data == key)
+  {
+    x = *head;
+    *head = (*head)->next;
+    delete (x);
+  }
+  else
+  {
+    LIST *x_prev = *head;
+    x = x_prev->next;
+    for (int i = 1; (x->next != NULL) && (x->data != key); i++)
+    {
+      x_prev = x_prev->next;
+      x = x_prev->next;
+    }
+    x_prev->next = x->next;
+    delete (x);
+  }
+}
+
 int main()
 {
   return 0;
