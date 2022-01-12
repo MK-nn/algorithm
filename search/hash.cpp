@@ -58,6 +58,11 @@ void deleteLinkedList(LIST **head, int key)
   }
 }
 
+int hash(int data, int table_size)
+{
+  return data % table_size;
+}
+
 int main()
 {
   return 0;
