@@ -83,6 +83,7 @@ int main()
 
     int n;
     std::cin >> n;
+
     if (n == 1)
     {
       std::cout << "挿入する数字を選択してください" << std::endl;
