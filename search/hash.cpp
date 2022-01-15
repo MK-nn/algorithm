@@ -1,4 +1,5 @@
 #include <iostream>
+// 衝突はチェイン法で回避する
 
 // singly linked list
 typedef struct list
