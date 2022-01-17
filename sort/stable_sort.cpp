@@ -1,4 +1,5 @@
 #include <iostream>
+// 安定なソートとは、sortした結果数が同じであるものの並び順が変化していないものである
 
 typedef struct Cart
 {
