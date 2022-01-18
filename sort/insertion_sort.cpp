@@ -48,6 +48,7 @@ int main()
   std::cout << "Before sort: ";
   trace(array, n);
   insertionSort(array, n);
+
   std::cout << "After sort: ";
   trace(array, n);
 
