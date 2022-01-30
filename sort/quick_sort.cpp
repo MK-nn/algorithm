@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 #include <time.h>
-using namespace std;
 
 void swap(int *a, int *b)
 {
@@ -41,11 +40,11 @@ int main()
 {
   int array_size;
 
-  cin >> array_size;
+  std::cin >> array_size;
   int array[array_size];
   for (int i = 0; i < array_size; i++)
   {
-    cin >> array[i];
+    std::cin >> array[i];
   }
 
   printf("sort 前: ");
@@ -66,7 +65,7 @@ int main()
   }
   printf("\n");
 
-  cout << "実行時間=>" << (double)(end - start) << "ms" << endl;
+  std::cout << "実行時間=>" << (double)(end - start) << "ms" << std::endl;
 
   return 0;
 }
