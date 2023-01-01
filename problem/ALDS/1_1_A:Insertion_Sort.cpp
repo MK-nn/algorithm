@@ -7,11 +7,11 @@ int log(int array[], int n)
   {
     if (i > 0)
     {
-      std::cout << " ";
+      cout << " ";
     }
-    std::cout << array[i];
+    cout << array[i];
   }
-  std::cout << std::endl;
+  cout << endl;
 
   return 0;
 }
