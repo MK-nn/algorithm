@@ -1,26 +1,26 @@
 // ref: https://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ALDS1_1_D
 #include <iostream>
 #include <algorithm>
-
-static const int MAX = 200000;
+using namespace std;
 
 int main(){
-  int R[MAX], n;
+  int n;
+  cin >> n;
 
-  std::cin >> n;
+  int R[n];
   for (int i = 0; i < n; i++){
-    std::cin >> R[i];
+    cin >> R[i];
   }
 
-  int max_n = -MAX;
-  int min_n = R[0];
+  int maxv = -2000000000;
+  int minv = R[0];
 
   for ( int j = 1; j < n; j++){
-    max_n = std::max(max_n, R[j] - min_n);
-    min_n = std::min(min_n, R[j]); 
+    maxv = max(maxv, R[j] - minv);
+    minv = min(minv, R[j]); 
   }
 
-  std::cout << "result: " << max_n << std::endl;
+  cout << maxv << endl;
 
   return 0;
 }
