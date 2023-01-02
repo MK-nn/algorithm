@@ -1,3 +1,4 @@
+// ref: https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/2/ALDS1_2_C
 #include <iostream>
 using namespace std;
 
